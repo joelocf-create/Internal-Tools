@@ -50,6 +50,14 @@
   "events": [
     {
       "status": "WATCH",
+      "title": "[自動偵測] Ambassador Greer Issues a Statement on Announcement of Recommendations from the U.S.-China Board of Trade",
+      "date": "2026-09-27",
+      "summary": "USTR Press Releases 發現新的官方文件；關鍵字：china。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/september/ambassador-greer-issues-statement-announcement-recommendations-us-china-board-trade"
+    },
+    {
+      "status": "WATCH",
       "title": "U.S.-China Board of Trade — 30-for-30",
       "date": "2026-09-27",
       "summary": "約 US$30B 中國輸美非敏感商品被納入未來較優惠 tariff treatment 的考量；尚非已生效降稅。",
@@ -127,8 +135,12 @@
     }
   ],
   "monitor": {
-    "known_ids": [],
-    "last_scan_utc": null,
+    "known_ids": [
+      "053aaa20e4413db990e6",
+      "14747c85db4e65f72f3d",
+      "a5f727aa0702c88b4048"
+    ],
+    "last_scan_utc": "2026-09-30T04:02:05+00:00",
     "source_errors": []
   }
 }
