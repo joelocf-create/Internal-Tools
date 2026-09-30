@@ -142,9 +142,42 @@ def should_monitor_title(title):
     t = title.lower()
     excluded = [
         "career", "privacy", "contact", "importer tips", "importing a car",
-        "intellectual property rights", "lab leak", "covid"
+        "intellectual property rights", "lab leak", "covid", "section 337"
     ]
-    return not any(x in t for x in excluded)
+    if any(x in t for x in excluded):
+        return False
+
+    action_words = [
+        "takes action", "final action", "findings", "proposes action",
+        "determination", "determinations", "imposes", "tariff", "tariffs",
+        "exclusion", "extensions", "extends", "implementation", "implements",
+        "modification", "notice", "guidance", "board of trade", "chapter 99"
+    ]
+    if not any(x in t for x in action_words):
+        return False
+
+    if "section 301" in t:
+        return any(x in t for x in [
+            "china", "vietnam", "taiwan", "forced labor",
+            "structural excess capacity"
+        ])
+
+    if "section 232" in t or "section 122" in t:
+        return True
+
+    if "china" in t:
+        return any(x in t for x in [
+            "tariff", "trade", "duty", "exclusion", "board of trade",
+            "chapter 99", "hts", "reciprocal"
+        ])
+
+    if any(x in t for x in PRODUCT_TERMS):
+        return True
+
+    if "forced labor" in t:
+        return True
+
+    return False
 
 def canonical_id(url):
     return hashlib.sha256(url.split("#")[0].rstrip("/").encode()).hexdigest()[:20]
