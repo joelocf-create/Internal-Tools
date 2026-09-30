@@ -5,6 +5,10 @@ on:
     - cron: '15 1 * * *'
       timezone: 'Asia/Taipei'
   workflow_dispatch:
+  push:
+    paths:
+      - 'cf-us-tariff-monitor/**'
+      - '.github/workflows/cf-us-tariff-monitor.yml'
 
 permissions:
   contents: write
