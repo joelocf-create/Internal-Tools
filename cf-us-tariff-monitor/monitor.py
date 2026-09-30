@@ -15,16 +15,16 @@ LOOKBACK_DAYS = 21
 
 SOURCE_LISTS = [
     ("White House Releases", "https://www.whitehouse.gov/releases/"),
-    ("USTR Press Releases", "https://www.ustr.gov/about-us/policy-offices/press-office/press-releases/2026"),
+    ("USTR Press Releases", "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026"),
     ("CBP Trade Remedies - China 301", "https://www.cbp.gov/trade/remedies/301-certain-products-china"),
-    ("CBP Trade Programs", "https://www.cbp.gov/trade"),
+    ("CBP Media Releases", "https://www.cbp.gov/newsroom/media-releases/all"),
 ]
 
 KEYWORDS = [
     "tariff", "tariffs", "section 301", "section 232", "section 122",
-    "forced labor", "china", "customs", "import", "duty", "duties",
+    "forced labor", "china", "customs", "duty", "duties",
     "chapter 99", "hts", "exclusion", "trade remedy", "reciprocal",
-    "first sale", "country of origin", "origin", "textile", "blanket",
+    "first sale", "country of origin", "textile", "blanket",
     "throw", "blind", "blinds", "shade", "shades"
 ]
 
@@ -126,6 +126,26 @@ def relevance(title):
         return "POLICY"
     return "MONITOR"
 
+def allowed_link(source_name, url):
+    u = url.lower()
+    if source_name == "White House Releases":
+        return "/releases/" in u or "/presidential-actions/" in u
+    if source_name == "USTR Press Releases":
+        return "/press-releases/" in u and "/2026/" in u
+    if source_name == "CBP Media Releases":
+        return "/newsroom/" in u and (
+            "/national-media-release/" in u or "/media-release/" in u
+        )
+    return False
+
+def should_monitor_title(title):
+    t = title.lower()
+    excluded = [
+        "career", "privacy", "contact", "importer tips", "importing a car",
+        "intellectual property rights", "lab leak", "covid"
+    ]
+    return not any(x in t for x in excluded)
+
 def canonical_id(url):
     return hashlib.sha256(url.split("#")[0].rstrip("/").encode()).hexdigest()[:20]
 
@@ -167,8 +187,14 @@ def main():
                 if not u.startswith("http") or u in seen_urls:
                     continue
                 seen_urls.add(u)
+                if not allowed_link(source_name, u):
+                    continue
+                if not should_monitor_title(title):
+                    continue
                 hits = relevant(title)
                 if not hits:
+                    continue
+                if relevance(title) == "MONITOR":
                     continue
                 date = item.get("date")
                 if date:
@@ -245,15 +271,14 @@ def main():
 
     # Always retain the IDs we have inspected, but only change the dashboard
     # when there is a genuinely new candidate or a source error.
-    monitor["known_ids"] = sorted(known.union(dedup.keys()))
     monitor["last_scan_utc"] = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     monitor["source_errors"] = source_errors
 
-    if not new_items and not source_errors:
-        # No material event: do not alter the dashboard payload.
-        save_data(data)
+    if not new_items:
         print("NO_MATERIAL_CHANGE")
         return 0
+
+    monitor["known_ids"] = sorted(known.union(dedup.keys()))
 
     for item in new_items[:20]:
         data.setdefault("events", []).insert(0, {
