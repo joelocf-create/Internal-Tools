@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-09-30",
-  "automation_note": "GitHub Actions 每日自動查核 White House / USTR / CBP / Federal Register。只有偵測到新官方文件或來源異常時才修改 data.json；Dashboard 由 data.json 驅動。",
+  "automation_note": "GitHub Actions 每日自動查核 White House / USTR / CBP / Federal Register。只有偵測到新官方文件或政策狀態變更才更新 data.json；Dashboard 由 data.json 驅動。",
   "sources": [
     {
       "name": "White House",
@@ -48,166 +48,6 @@
     }
   ],
   "events": [
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Rescission of the Greenhouse Gas Findings for Fossil Fuel-Fired Power Plants and Repeal of Regulations for Power Plant Greenhouse Gas Emissions Under Clean Air Act Section 111",
-      "date": "2026-09-17",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：Section 122 tariff。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/17/2026-19072/rescission-of-the-greenhouse-gas-findings-for-fossil-fuel-fired-power-plants-and-repeal-of"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Federal Acquisition Regulation: Revolutionary Federal Acquisition Regulation Overhaul Parts 9, 27, and 47",
-      "date": "2026-09-18",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：Section 232 tariff。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19159/federal-acquisition-regulation-revolutionary-federal-acquisition-regulation-overhaul-parts-9-27-and"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Public Hearing Regarding Section 301 Investigation of Germany’s Persistent Underpayment for Innovative Pharmaceutical Products",
-      "date": "2026-09-21",
-      "summary": "USTR Press Releases 發現新的官方文件；關鍵字：section 301。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/september/public-hearing-regarding-section-301-investigation-germanys-persistent-underpayment-innovative"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Certain Linear Hydraulic Cylinders and Parts Thereof From Canada, the People's Republic of China, India, the Republic of Korea, and Mexico: Initiation of Less-Than-Fair-Value Investigations; Correction",
-      "date": "2026-09-22",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：china。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/22/2026-19374/certain-linear-hydraulic-cylinders-and-parts-thereof-from-canada-the-peoples-republic-of-china-india"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Large Diameter Welded Pipe From Canada: Preliminary Results of Changed Circumstances Review",
-      "date": "2026-09-22",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：Section 122 tariff。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/22/2026-19377/large-diameter-welded-pipe-from-canada-preliminary-results-of-changed-circumstances-review"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Guidance and Procedures for Implementing Tariff Adjustments for Specialty Pharmaceuticals and Associated Pharmaceutical Ingredients and Technical Corrections to the Harmonized Tariff Schedule of the United States for Duties Imposed Under Proclamation 11020",
-      "date": "2026-09-23",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：tariff, duties。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/23/2026-19498/guidance-and-procedures-for-implementing-tariff-adjustments-for-specialty-pharmaceuticals-and"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] USTR Announces Fiscal Year 2027 WTO Tariff-Rate Quota Allocations for Raw Cane Sugar",
-      "date": "2026-09-23",
-      "summary": "USTR Press Releases 發現新的官方文件；關鍵字：tariff。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/september/ustr-announces-fiscal-year-2027-wto-tariff-rate-quota-allocations-raw-cane-sugar"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Certain Boiler Protection for Absorption Refrigeration Systems and Components Thereof; Notice of the Commission's Final Determination Finding a Violation of Section 337; Issuance of a General Exclusion Order and Cease and Desist Orders; Termination of the Investigation",
-      "date": "2026-09-24",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：exclusion。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19543/certain-boiler-protection-for-absorption-refrigeration-systems-and-components-thereof-notice-of-the"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Certain Flash-Spun Nonwoven Materials and Products Containing Same; Notice of Commission Determination To Review in Part a Final Initial Determination Finding a Violation of Section 337; Request for Written Submissions on Remedy, the Public Interest, and Bonding",
-      "date": "2026-09-24",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：China tariff exclusion。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19544/certain-flash-spun-nonwoven-materials-and-products-containing-same-notice-of-commission"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Certain Glass Substrates for Liquid Crystal Displays, Products Containing the Same, and Methods for Manufacturing the Same; Notice of a Commission Determination to Review in Part a Final Initial Determination Finding a Violation of Section 337; Request for Written Submissions on the Issues Under Review and on Remedy, the Public Interest, and Bonding",
-      "date": "2026-09-24",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：China tariff exclusion。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19545/certain-glass-substrates-for-liquid-crystal-displays-products-containing-the-same-and-methods-for"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Certain Vertical Shaft Engines Between 99cc and 225cc, and Parts Thereof, From the People's Republic of China: Affirmative Final Determinations of Circumvention of the Antidumping and Countervailing Duty Orders-5C65M0 and BC70M0 Engines",
-      "date": "2026-09-24",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：china, duty。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19519/certain-vertical-shaft-engines-between-99cc-and-225cc-and-parts-thereof-from-the-peoples-republic-of"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Certain Wearable Breast Pumps, Associated Milk Storage Containers, and Components Thereof; Notice of Institution of Investigation",
-      "date": "2026-09-24",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：China tariff exclusion。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19586/certain-wearable-breast-pumps-associated-milk-storage-containers-and-components-thereof-notice-of"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Common Alloy Aluminum Sheet From the People's Republic of China, Bahrain, Brazil, Croatia, Egypt, Germany, India, Indonesia, Italy, Oman, Romania, Serbia, Slovenia, South Africa, Spain, Taiwan, and the Republic of Türkiye: Final Results of Changed Circumstances Reviews and Revocation of the Antidumping and Countervailing Duty Orders, in Part",
-      "date": "2026-09-24",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：china, duty。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19516/common-alloy-aluminum-sheet-from-the-peoples-republic-of-china-bahrain-brazil-croatia-egypt-germany"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Measures To Restrict Stockpiling of Polysilicon and Polysilicon Derivatives Under Proclamation 11052",
-      "date": "2026-09-24",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：Section 232 tariff。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19537/measures-to-restrict-stockpiling-of-polysilicon-and-polysilicon-derivatives-under-proclamation-11052"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] United States Seeks Mexico’s Review of Alleged Denial of Workers’ Rights at Yokohama Tire Manufacturing Mexico, S.A. de C.V.",
-      "date": "2026-09-25",
-      "summary": "USTR Press Releases 發現新的官方文件；關鍵字：hts。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/september/united-states-seeks-mexicos-review-alleged-denial-workers-rights-yokohama-tire-manufacturing-mexico"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Ambassador Greer Issues a Statement on Announcement of Recommendations from the U.S.-China Board of Trade",
-      "date": "2026-09-27",
-      "summary": "USTR Press Releases 發現新的官方文件；關鍵字：china。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/september/ambassador-greer-issues-statement-announcement-recommendations-us-china-board-trade"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] President Trump, First Lady Conclude Historic China State Visit",
-      "date": "2026-09-27",
-      "summary": "White House Releases 發現新的官方文件；關鍵字：china。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.whitehouse.gov/releases/2026/09/president-trump-first-lady-conclude-historic-china-state-visit/"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Certain Frozen Warmwater Shrimp From India: Rescission of Antidumping Duty Administrative Review, In Part; 2025-2026",
-      "date": "2026-09-28",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：duty。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/28/2026-19779/certain-frozen-warmwater-shrimp-from-india-rescission-of-antidumping-duty-administrative-review-in"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Certain Powered Rocker-Recliner and Glider-Recliner Mechanisms and Seating Units Containing Same; Notice of Institution of Investigation",
-      "date": "2026-09-28",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：China tariff exclusion。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/28/2026-19713/certain-powered-rocker-recliner-and-glider-recliner-mechanisms-and-seating-units-containing-same"
-    },
-    {
-      "status": "WATCH",
-      "title": "[自動偵測] Certain Ink Cartridges and Components Thereof I; Notice of a Commission Determination Finding a Violation of Section 337; Issuance of a Limited Exclusion Order and Cease and Desist Orders; Termination of the Investigation",
-      "date": "2026-09-29",
-      "summary": "Federal Register 發現新的官方文件；關鍵字：exclusion。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
-      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
-      "url": "https://www.federalregister.gov/documents/2026/09/29/2026-19847/certain-ink-cartridges-and-components-thereof-i-notice-of-a-commission-determination-finding-a"
-    },
     {
       "status": "WATCH",
       "title": "U.S.-China Board of Trade — 30-for-30",
@@ -287,44 +127,8 @@
     }
   ],
   "monitor": {
-    "known_ids": [
-      "006d1406bc92073450ef",
-      "053aaa20e4413db990e6",
-      "14747c85db4e65f72f3d",
-      "238b58779e03a6c156cf",
-      "2b48e0928aa661723ec4",
-      "304bf69541a7e577c5d4",
-      "3353c3d1cbc6ef2f9345",
-      "39ab7a179af0b874890c",
-      "4678a38a305c4babffea",
-      "4742b31043c0ea3894cf",
-      "4a7f7df32524bb292544",
-      "57802728c75064e9f685",
-      "7dec3f8fb04ec54b8052",
-      "82daaf4d8ce406182338",
-      "8c919397b4986c4248aa",
-      "8de39144b049a2210aa7",
-      "9ef9b2527952d15a9cfe",
-      "a1aab88285973d0c9a25",
-      "a5f727aa0702c88b4048",
-      "aa789ab0da2f141e4e22",
-      "af4f63b43717c1b227ba",
-      "b44dbd6cd8a54e8dcb42",
-      "bd1de9f1f6b2bfe7cc48",
-      "ca4019a178898c0c705b",
-      "cb3dd924b61e7bec9ee5",
-      "d380d120652e89842ed8",
-      "d7b5d5b8ba3d0978dc84",
-      "da69489ed2ec466ff54a",
-      "dbee3907176b0e455658",
-      "dc898ca42aab71b480a8",
-      "e62d81ae69c1412bfeee",
-      "e9195972636a9539b7b6",
-      "eb0210bd33b888e5305c",
-      "fb44f5b6e7ff727d9c43",
-      "fc6bd5d6038a42324afe"
-    ],
-    "last_scan_utc": "2026-09-30T04:00:00+00:00",
+    "known_ids": [],
+    "last_scan_utc": null,
     "source_errors": []
   }
 }
