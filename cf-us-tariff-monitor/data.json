@@ -1,0 +1,121 @@
+{
+  "checked_at": "2026-09-30",
+  "automation_note": "此頁由 data.json 驅動；後續排程會查核官方來源，只有新事件或政策狀態變更才更新資料。",
+  "sources": [
+    {
+      "name": "White House",
+      "url": "https://www.whitehouse.gov/releases/2026/09/u-s-china-board-of-trade/"
+    },
+    {
+      "name": "USTR",
+      "url": "https://ustr.gov/trade-topics/enforcement/section-301-investigations/section-301-china-technology-transfer/china-section-301-tariff-actions-and-exclusion-process/reinstatement-certain-exclusions-previously-extended"
+    },
+    {
+      "name": "USTR Section 301 Search",
+      "url": "https://www.ustr.gov/issue-areas/enforcement/section-301-investigations/search"
+    },
+    {
+      "name": "White House Forced Labor 301",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/07/actions-by-the-united-states-in-the-investigations-under-section-301-of-the-trade-act-of-1974-of-the-acts-policies-and-practices-of-60-economies-related-to-the-failure-of-each-economy-to-impose-and/"
+    }
+  ],
+  "cards": [
+    {
+      "label": "整體狀態",
+      "value": "WATCH",
+      "tone": "watch"
+    },
+    {
+      "label": "最新重大事件",
+      "value": "30-for-30"
+    },
+    {
+      "label": "China exclusions",
+      "value": "11/09/2026",
+      "tone": "watch"
+    },
+    {
+      "label": "最後查核",
+      "value": "2026-09-30"
+    }
+  ],
+  "events": [
+    {
+      "status": "WATCH",
+      "title": "U.S.-China Board of Trade — 30-for-30",
+      "date": "2026-09-27",
+      "summary": "約 US$30B 中國輸美非敏感商品被納入未來較優惠 tariff treatment 的考量；尚非已生效降稅。",
+      "detail": "White House 表述為考慮清單，優惠 tariff treatment 仍須依雙方各自國內法律與程序實施。CF 應等待正式 HTS / Chapter 99 / effective date 與 CBP entry guidance。",
+      "url": "https://www.whitehouse.gov/releases/2026/09/u-s-china-board-of-trade/"
+    },
+    {
+      "status": "WATCH",
+      "title": "China Section 301 exclusions",
+      "date": "2026-09-30",
+      "summary": "USTR 官方頁面顯示部分既有 exclusions 延長至 2026-11-09。",
+      "detail": "Dashboard 將 exclusions 視為到期監控項；不得因存在 exclusion 清單而推定所有 China COO 商品均免除 Section 301。",
+      "url": "https://ustr.gov/trade-topics/enforcement/section-301-investigations/section-301-china-technology-transfer/china-section-301-tariff-actions-and-exclusion-process/reinstatement-certain-exclusions-previously-extended"
+    }
+  ],
+  "products": [
+    {
+      "group": "china",
+      "product": "Window Blinds / Shades",
+      "coo": "China",
+      "hts": "實際 HTS + China 301 / exclusions / Chapter 99",
+      "status": "WATCH",
+      "action": "核對正式 30-for-30 tariff treatment 與 exclusions"
+    },
+    {
+      "group": "twvn",
+      "product": "Window Blinds / Shades",
+      "coo": "Taiwan / Vietnam",
+      "hts": "實際 HTS + 現行適用措施",
+      "status": "NO CHANGE",
+      "action": "維持現行申報並監控新措施"
+    },
+    {
+      "group": "china",
+      "product": "Throw / Blanket",
+      "coo": "China",
+      "hts": "Chapter 63 + China 301 / exclusions",
+      "status": "WATCH",
+      "action": "核對實際 HTS 是否進入優惠清單"
+    },
+    {
+      "group": "twvn",
+      "product": "Throw / Blanket",
+      "coo": "Taiwan / Vietnam",
+      "hts": "實際 HTS + 現行適用措施",
+      "status": "NO CHANGE",
+      "action": "維持現行申報並監控新措施"
+    }
+  ],
+  "measures": [
+    {
+      "name": "Section 122",
+      "status": "NO NEW ACTION",
+      "note": "僅在官方文件顯示有效性、稅率或適用範圍改變時更新"
+    },
+    {
+      "name": "Section 232",
+      "status": "WATCH",
+      "note": "持續檢查 CF 實際 HTS 是否落入新的 downstream derivative 措施"
+    },
+    {
+      "name": "Section 301 — China",
+      "status": "WATCH",
+      "note": "China COO 必須獨立計算；同步追蹤 exclusions 與 Chapter 99"
+    },
+    {
+      "name": "Forced Labor 301",
+      "status": "WATCH",
+      "note": "若官方最終措施改變台灣／中國或其他 COO 的適用，立即標記"
+    },
+    {
+      "name": "First Sale",
+      "status": "NO NEW ACTION",
+      "note": "持續保存 factory invoice、middleman transaction、付款、title/risk 與 U.S.-destination evidence"
+    }
+  ]
+}
