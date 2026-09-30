@@ -1,0 +1,63 @@
+name: CF US Tariff Monitor - Daily Check
+
+on:
+  schedule:
+    - cron: '15 1 * * *'
+      timezone: 'Asia/Taipei'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cf-us-tariff-monitor
+  cancel-in-progress: true
+
+jobs:
+  monitor-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Run official-source monitor
+        id: monitor
+        run: |
+          python3 cf-us-tariff-monitor/monitor.py
+
+      - name: Commit updated dashboard data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- cf-us-tariff-monitor/data.json; then
+            echo "No dashboard data change."
+          else
+            git add cf-us-tariff-monitor/data.json
+            git commit -m "Auto-update CF US Tariff Monitor data"
+            git push
+          fi
+
+      - name: Prepare Pages site
+        run: |
+          mkdir -p _site
+          cp cf-us-tariff-monitor/index.html _site/index.html
+          cp cf-us-tariff-monitor/data.json _site/data.json
+          touch _site/.nojekyll
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: '_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
