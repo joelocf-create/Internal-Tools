@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-09-30",
-  "automation_note": "GitHub Actions 每日自動查核 White House / USTR / CBP / Federal Register。只有偵測到新官方文件或政策狀態變更才更新 data.json；Dashboard 由 data.json 驅動。",
+  "automation_note": "GitHub Actions 每日自動查核 White House / USTR / CBP / Federal Register。只有偵測到新官方文件或來源異常時才修改 data.json；Dashboard 由 data.json 驅動。",
   "sources": [
     {
       "name": "White House",
@@ -48,6 +48,54 @@
     }
   ],
   "events": [
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] USTR Convenes Over 50 Trading Partners to Provide Training Related to Imposing and Enforcing Forced Labor Import Prohibitions",
+      "date": "2026-09-15",
+      "summary": "USTR Press Releases 發現新的官方文件；關鍵字：forced labor。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/september/ustr-convenes-over-50-trading-partners-provide-training-related-imposing-and-enforcing-forced-labor"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Public Hearing Regarding Section 301 Investigation of Germany’s Persistent Underpayment for Innovative Pharmaceutical Products",
+      "date": "2026-09-21",
+      "summary": "USTR Press Releases 發現新的官方文件；關鍵字：section 301。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/september/public-hearing-regarding-section-301-investigation-germanys-persistent-underpayment-innovative"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] USTR Announces Fiscal Year 2027 WTO Tariff-Rate Quota Allocations for Raw Cane Sugar",
+      "date": "2026-09-23",
+      "summary": "USTR Press Releases 發現新的官方文件；關鍵字：tariff。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/september/ustr-announces-fiscal-year-2027-wto-tariff-rate-quota-allocations-raw-cane-sugar"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] United States Seeks Mexico’s Review of Alleged Denial of Workers’ Rights at Yokohama Tire Manufacturing Mexico, S.A. de C.V.",
+      "date": "2026-09-25",
+      "summary": "USTR Press Releases 發現新的官方文件；關鍵字：hts。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/september/united-states-seeks-mexicos-review-alleged-denial-workers-rights-yokohama-tire-manufacturing-mexico"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Ambassador Greer Issues a Statement on Announcement of Recommendations from the U.S.-China Board of Trade",
+      "date": "2026-09-27",
+      "summary": "USTR Press Releases 發現新的官方文件；關鍵字：china。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/september/ambassador-greer-issues-statement-announcement-recommendations-us-china-board-trade"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] President Trump, First Lady Conclude Historic China State Visit",
+      "date": "2026-09-27",
+      "summary": "White House Releases 發現新的官方文件；關鍵字：china。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.whitehouse.gov/releases/2026/09/president-trump-first-lady-conclude-historic-china-state-visit/"
+    },
     {
       "status": "WATCH",
       "title": "U.S.-China Board of Trade — 30-for-30",
@@ -127,8 +175,17 @@
     }
   ],
   "monitor": {
-    "known_ids": [],
-    "last_scan_utc": null,
+    "known_ids": [
+      "053aaa20e4413db990e6",
+      "14747c85db4e65f72f3d",
+      "2b48e0928aa661723ec4",
+      "304bf69541a7e577c5d4",
+      "82daaf4d8ce406182338",
+      "8de39144b049a2210aa7",
+      "a5f727aa0702c88b4048",
+      "d7b5d5b8ba3d0978dc84"
+    ],
+    "last_scan_utc": "2026-09-30T04:00:50+00:00",
     "source_errors": []
   }
 }
