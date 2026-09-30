@@ -244,9 +244,21 @@ def main():
                             continue
                     except ValueError:
                         pass
+                t = title.lower()
+                fr_focus = [
+                    "section 301", "section 232", "section 122",
+                    "forced labor", "chapter 99", "htsus",
+                    "china tariff", "tariff exclusion", "product exclusion"
+                ]
+                if "section 337" in t or "antidumping" in t or "countervailing" in t:
+                    continue
+                if not any(k in t for k in fr_focus):
+                    continue
                 hits = relevant(title)
                 if not hits:
-                    hits = [term]
+                    continue
+                if relevance(title) == "MONITOR":
+                    continue
                 candidates.append({
                     "id": canonical_id(url),
                     "source": "Federal Register",
