@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-09-30",
-  "automation_note": "此頁由 data.json 驅動；後續排程會查核官方來源，只有新事件或政策狀態變更才更新資料。",
+  "automation_note": "GitHub Actions 每日自動查核 White House / USTR / CBP / Federal Register。只有偵測到新官方文件或來源異常時才修改 data.json；Dashboard 由 data.json 驅動。",
   "sources": [
     {
       "name": "White House",
@@ -40,6 +40,166 @@
     }
   ],
   "events": [
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] IEEPA - Duty Refunds",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：duty。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/programs-administration/trade-remedies/ieepa-duty-refunds"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Import Safety",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：import。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/priority-issues/import-safety"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Importer Create/Update Identity Form (CBP Form 5106) FAQ",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：import。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/cbp-form-5106/importer-createupdate-identity-5106-faq"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Importer Security Filing (ISF)",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Programs 發現新的官方文件；關鍵字：import。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/border-security/ports-entry/cargo-security/importer-security-filing-102"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Importer/Exporter Tips",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：import。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/basic-import-export/importer-exporter-tips"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Importing a Car",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：import。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/basic-import-export/importing-car"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Intellectual Property Rights (IPR)",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：hts。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/priority-issues/ipr"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Lab Leak: The True Origins of Covid-19",
+      "date": "2026-09-30",
+      "summary": "White House Releases 發現新的官方文件；關鍵字：origin。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.whitehouse.gov/lab-leak-true-origins-of-covid-19/"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Russia Column 2 Rates of Duty",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：duty。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/russia-column-2-rates-duty"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Search Customs Rulings (CROSS)",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Programs 發現新的官方文件；關鍵字：customs。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://rulings.cbp.gov/home"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Section 232 Additional FAQs - Autos",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：section 232。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/section-232-additional-faqs-autos"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Section 232 Additional FAQs - Medium Heavy-Duty Vehicles",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：section 232, duty。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/section-232-additional-faqs-mhdv"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Section 232 FAQs",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：section 232。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/232-tariffs-aluminum-and-steel/faqs"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Section 232 Frequently Asked Questions",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：section 232。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/232-tariffs-aluminum-and-steel-faqs"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Section 301 Trade Remedies Frequently Asked Questions",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：section 301。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/section-301-trade-remedies/faqs"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Spotlights",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：hts。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/newsroom/news/news-from-cbp"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Strengthening Customs Enforcement",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：customs。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/strengthening-customs-enforcement"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Textiles/Wearing Apparel",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：textile。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/trade/priority-issues/textiles"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] World Customs Organization",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：customs。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：MONITOR。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.cbp.gov/border-security/international-initiatives/wco"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] https://ustr.gov/sites/default/files/enforcement/301Investigations/FRN%20exclusion%20process.pdf",
+      "date": "2026-09-30",
+      "summary": "CBP Trade Remedies - China 301 發現新的官方文件；關鍵字：exclusion。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://ustr.gov/sites/default/files/enforcement/301Investigations/FRN%20exclusion%20process.pdf"
+    },
     {
       "status": "WATCH",
       "title": "U.S.-China Board of Trade — 30-for-30",
@@ -117,5 +277,77 @@
       "status": "NO NEW ACTION",
       "note": "持續保存 factory invoice、middleman transaction、付款、title/risk 與 U.S.-destination evidence"
     }
-  ]
+  ],
+  "monitor": {
+    "known_ids": [
+      "006d1406bc92073450ef",
+      "053aaa20e4413db990e6",
+      "0931e3d13e63c407b51e",
+      "0b89012dc149e35aa1f7",
+      "14747c85db4e65f72f3d",
+      "16f4e15052601cfcdd77",
+      "238b58779e03a6c156cf",
+      "25c47da41acae8958c08",
+      "2fc379125956d87c7317",
+      "30038c81ee536438b03f",
+      "3353c3d1cbc6ef2f9345",
+      "39ab7a179af0b874890c",
+      "3c47b383b59fba08ab2b",
+      "404fd3aa012854b16eb1",
+      "4678a38a305c4babffea",
+      "4742b31043c0ea3894cf",
+      "4a7f7df32524bb292544",
+      "50c08f29aaa9e110fd84",
+      "5171a5348400ef77fad0",
+      "57802728c75064e9f685",
+      "5f81d78e6f8b9cf290e9",
+      "6029182c28f02a947b5d",
+      "65b7da32fead831a5d41",
+      "6f347e6965801d2d826b",
+      "7dec3f8fb04ec54b8052",
+      "803833ce271dddd90dc2",
+      "83bd40177cf5af63577c",
+      "842b17c6acc95f1e2933",
+      "85e7641b653dc3f49d11",
+      "874060e1687f17dc2124",
+      "88ff04e9b79574feffdc",
+      "8c919397b4986c4248aa",
+      "8dc2b7ef91779f1cf9b9",
+      "8de39144b049a2210aa7",
+      "963e5b909d0c85e298d3",
+      "9e1fbfd2d23a42a6f2df",
+      "9ef9b2527952d15a9cfe",
+      "a1aab88285973d0c9a25",
+      "a69d73b0339a112f50b0",
+      "a7d642cfb19e2346865b",
+      "aa789ab0da2f141e4e22",
+      "aab9a580340dfbad224f",
+      "af4f63b43717c1b227ba",
+      "b41082c37dd0e547fe4f",
+      "b44dbd6cd8a54e8dcb42",
+      "bd1de9f1f6b2bfe7cc48",
+      "c894d6891b6b7e0f2780",
+      "ca4019a178898c0c705b",
+      "cb3dd924b61e7bec9ee5",
+      "cc84d45a1184be828315",
+      "d10a31e7abc479406050",
+      "d380d120652e89842ed8",
+      "d651fcca9d0f2295fcc2",
+      "d7c4128a3a9d2dd9879a",
+      "d9f6613be0671a1087b8",
+      "da69489ed2ec466ff54a",
+      "dbee3907176b0e455658",
+      "dc898ca42aab71b480a8",
+      "e62d81ae69c1412bfeee",
+      "e9195972636a9539b7b6",
+      "eb0210bd33b888e5305c",
+      "fb44f5b6e7ff727d9c43",
+      "fb7d9c1d406c7a0c4477",
+      "fc6bd5d6038a42324afe"
+    ],
+    "last_scan_utc": "2026-09-30T03:58:44+00:00",
+    "source_errors": [
+      "USTR Press Releases: HTTPError: HTTP Error 404: Not Found"
+    ]
+  }
 }
