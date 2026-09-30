@@ -179,6 +179,18 @@ def should_monitor_title(title):
 
     return False
 
+def duplicate_topic(title, existing_events):
+    t = title.lower()
+    if "board of trade" in t:
+        return any("board of trade" in str(e.get("title", "")).lower() for e in existing_events)
+    if "forced labor" in t and "section 301" in t:
+        return any(
+            "forced labor" in str(e.get("title", "")).lower()
+            and "section 301" in str(e.get("title", "")).lower()
+            for e in existing_events
+        )
+    return False
+
 def canonical_id(url):
     return hashlib.sha256(url.split("#")[0].rstrip("/").encode()).hexdigest()[:20]
 
@@ -311,7 +323,10 @@ def main():
         if old is None or len(c["hits"]) > len(old["hits"]):
             dedup[c["id"]] = c
 
-    new_items = [c for c in dedup.values() if c["id"] not in known]
+    new_items = [
+        c for c in dedup.values()
+        if c["id"] not in known and not duplicate_topic(c["title"], data.get("events", []))
+    ]
     new_items.sort(key=lambda x: (x.get("date") or "", x["title"]), reverse=True)
 
     # Always retain the IDs we have inspected, but only change the dashboard
