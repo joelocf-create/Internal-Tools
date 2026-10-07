@@ -44,10 +44,18 @@
     },
     {
       "label": "最後查核",
-      "value": "2026-09-30"
+      "value": "2026-10-07"
     }
   ],
   "events": [
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Notice of Conforming Amendment to Product Exclusion: China's Acts, Policies, and Practices Related to Technology Transfer, Intellectual Property, and Innovation",
+      "date": "2026-10-07",
+      "summary": "Federal Register 發現新的官方文件；關鍵字：china, exclusion。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20511/notice-of-conforming-amendment-to-product-exclusion-chinas-acts-policies-and-practices-related-to"
+    },
     {
       "status": "WATCH",
       "title": "U.S.-China Board of Trade — 30-for-30",
@@ -127,8 +135,13 @@
     }
   ],
   "monitor": {
-    "known_ids": [],
-    "last_scan_utc": null,
+    "known_ids": [
+      "053aaa20e4413db990e6",
+      "14747c85db4e65f72f3d",
+      "353784537a2ae53591d1",
+      "a5f727aa0702c88b4048"
+    ],
+    "last_scan_utc": "2026-10-07T21:59:32+00:00",
     "source_errors": []
   }
 }
