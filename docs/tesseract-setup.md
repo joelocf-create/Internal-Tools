@@ -10,9 +10,9 @@
 
 | 程式 | 路徑 | 路徑處理方式 |
 |---|---|---|
-| DIB01 訂單擷取 | `order-processing/dib-po-extractor/dib01_po_extractor.py` | 寫死 `C:\Program Files\Tesseract-OCR\tesseract.exe` |
-| DischargePort（ChatGPT 版） | `ghg-inventory/discharge_port_chatgpt.py` | 寫死 `C:\Program Files\Tesseract-OCR\tesseract.exe` |
-| DischargePort（Claude 版） | `ghg-inventory/discharge_port_claude.py` | 依序嘗試 PATH、`Program Files`、`Program Files (x86)`、`%LOCALAPPDATA%\Programs` |
+| DIB01 訂單擷取 | `order-processing/dib-po-extractor/PO_PDF_Extractor_DIB01_V1.1.py` | 寫死 `C:\Program Files\Tesseract-OCR\tesseract.exe` |
+| DischargePort（ChatGPT 版） | `ghg-inventory/取得DischargePort_ChatGPT V1.0.py` | 寫死 `C:\Program Files\Tesseract-OCR\tesseract.exe` |
+| DischargePort（Claude 版） | `ghg-inventory/取得DischargePort_Claude V1.0.py` | 先查 PATH，再依序嘗試 `Program Files`、`Program Files (x86)`、`%LOCALAPPDATA%\Programs` |
 
 ## 注意事項
 
