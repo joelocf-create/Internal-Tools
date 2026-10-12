@@ -52,6 +52,9 @@ jobs:
           mkdir -p _site
           cp cf-us-tariff-monitor/index.html _site/index.html
           cp cf-us-tariff-monitor/data.json _site/data.json
+          mkdir -p _site/cf-us-tariff-monitor
+          cp cf-us-tariff-monitor/index.html _site/cf-us-tariff-monitor/index.html
+          cp cf-us-tariff-monitor/data.json _site/cf-us-tariff-monitor/data.json
           touch _site/.nojekyll
 
       - name: Setup Pages
