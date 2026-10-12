@@ -35,7 +35,7 @@
     },
     {
       "label": "最新重大事件",
-      "value": "30-for-30"
+      "value": "CBP 低價貨物提案"
     },
     {
       "label": "China exclusions",
@@ -167,5 +167,31 @@
     ],
     "last_scan_utc": "2026-10-07T21:59:32+00:00",
     "source_errors": []
+  },
+  "review": {
+    "as_of": "2026-10-11",
+    "status": "WATCH",
+    "headline": "已收錄新的官方政策事件，但目前沒有確認 CF 主要成品需要立即調整稅率或申報方式",
+    "assessment": "本次資料涵蓋 China Section 301 措施續行、排除條款技術修正，以及 CBP 低價貨物申報改革提案；提案與正式生效規定應分開判讀。",
+    "changes": [
+      {
+        "label": "China Section 301",
+        "text": "2018 年相關措施確認續行；China COO 仍依實際 HTS、Chapter 99 與排除條件申報。",
+        "event_url": "https://www.federalregister.gov/documents/2026/10/07/2026-20510/"
+      },
+      {
+        "label": "HTS 8479.90.9591",
+        "text": "排除條款技術性修正；與 CF 主要成品號列不同，相關零件另行核對。",
+        "event_url": "https://www.federalregister.gov/documents/2026/10/07/2026-20511/"
+      },
+      {
+        "label": "CBP 低價貨物",
+        "text": "Type 11／Type 13 與 Chapter 99 informal entry 改革仍為提案，尚非生效申報規則。",
+        "event_url": "https://www.federalregister.gov/documents/2026/10/08/2026-20650/"
+      }
+    ],
+    "product_impact": "Window Blinds/Shades、Throw/Blanket：目前不因上述公告直接調整成品 landed cost；China COO 維持逐項 HTS 與排除資格檢核。",
+    "actions": "維持現行申報 SOP；追蹤 30-for-30 正式 HTS／Chapter 99／effective date、China exclusions 到期及 CBP 最終 filing instructions。",
+    "scope_note": "本區為截至所示日期的已整理判斷，不代表 GitHub Actions 每次執行皆完成法規實質審查。"
   }
 }
