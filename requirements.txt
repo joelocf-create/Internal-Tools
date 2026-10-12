@@ -1,0 +1,9 @@
+# 各工具所需第三方套件（未指定版本；實際版本以使用環境為準）
+# cf-us-tariff-monitor/monitor.py 僅用標準函式庫，不需安裝
+PyMuPDF
+openpyxl
+pdfplumber
+pypdf
+pytesseract
+Pillow
+pdf2image

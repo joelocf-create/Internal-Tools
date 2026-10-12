@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# PyInstaller 打包產物（exe 請放 GitHub Releases，不進 repo）
+build/
+dist/
+*.spec
+*.exe
+
+# Office 暫存檔
+~$*
+
+# 編輯器 / 系統
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
