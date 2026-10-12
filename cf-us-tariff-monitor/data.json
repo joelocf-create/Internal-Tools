@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30",
+  "checked_at": "2026-10-11",
   "automation_note": "GitHub Actions 每日自動查核 White House / USTR / CBP / Federal Register。只有偵測到新官方文件或來源異常時才修改 data.json；Dashboard 由 data.json 驅動。",
   "sources": [
     {
@@ -44,10 +44,34 @@
     },
     {
       "label": "最後查核",
-      "value": "2026-10-07"
+      "value": "2026-10-11"
     }
   ],
   "events": [
+    {
+      "status": "WATCH",
+      "title": "CBP Low-Value Shipments — informal entry / Chapter 99 proposed rule",
+      "date": "2026-10-08",
+      "summary": "CBP 提出低價貨物 informal entry 改革草案，涉及 Type 11、Type 13、Bond 與 Chapter 99；尚未生效。",
+      "detail": "CF FedEx／UPS 低價樣品需追蹤最終規則；一般整櫃進口暫不變更申報。",
+      "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20650/"
+    },
+    {
+      "status": "WATCH",
+      "title": "China Section 301 exclusion — HTS 8479.90.9591 conforming amendment",
+      "date": "2026-10-07",
+      "summary": "Section 301 排除條款技術修正涉及 HTS 8479.90.9591，適用日期 2026-07-01。",
+      "detail": "與 CF 主要成品 HTS 不同；相關機械零件應核對正式條件及 CBP filing instructions。",
+      "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20511/"
+    },
+    {
+      "status": "WATCH",
+      "title": "China Section 301 — 2018 actions formally confirmed to continue",
+      "date": "2026-10-07",
+      "summary": "USTR 公告確認 2018 年 China Section 301 兩項措施繼續有效。",
+      "detail": "China COO 產品維持既有 Section 301／Chapter 99 申報；本事件未直接改變 CF 成品稅率。",
+      "url": "https://www.federalregister.gov/documents/2026/10/07/2026-20510/"
+    },
     {
       "status": "WATCH",
       "title": "[自動偵測] Notice of Conforming Amendment to Product Exclusion: China's Acts, Policies, and Practices Related to Technology Transfer, Intellectual Property, and Innovation",
@@ -58,19 +82,19 @@
     },
     {
       "status": "WATCH",
-      "title": "U.S.-China Board of Trade — 30-for-30",
-      "date": "2026-09-27",
-      "summary": "約 US$30B 中國輸美非敏感商品被納入未來較優惠 tariff treatment 的考量；尚非已生效降稅。",
-      "detail": "White House 表述為考慮清單，優惠 tariff treatment 仍須依雙方各自國內法律與程序實施。CF 應等待正式 HTS / Chapter 99 / effective date 與 CBP entry guidance。",
-      "url": "https://www.whitehouse.gov/releases/2026/09/u-s-china-board-of-trade/"
-    },
-    {
-      "status": "WATCH",
       "title": "China Section 301 exclusions",
       "date": "2026-09-30",
       "summary": "USTR 官方頁面顯示部分既有 exclusions 延長至 2026-11-09。",
       "detail": "Dashboard 將 exclusions 視為到期監控項；不得因存在 exclusion 清單而推定所有 China COO 商品均免除 Section 301。",
       "url": "https://ustr.gov/trade-topics/enforcement/section-301-investigations/section-301-china-technology-transfer/china-section-301-tariff-actions-and-exclusion-process/reinstatement-certain-exclusions-previously-extended"
+    },
+    {
+      "status": "WATCH",
+      "title": "U.S.-China Board of Trade — 30-for-30",
+      "date": "2026-09-27",
+      "summary": "約 US$30B 中國輸美非敏感商品被納入未來較優惠 tariff treatment 的考量；尚非已生效降稅。",
+      "detail": "White House 表述為考慮清單，優惠 tariff treatment 仍須依雙方各自國內法律與程序實施。CF 應等待正式 HTS / Chapter 99 / effective date 與 CBP entry guidance。",
+      "url": "https://www.whitehouse.gov/releases/2026/09/u-s-china-board-of-trade/"
     }
   ],
   "products": [
