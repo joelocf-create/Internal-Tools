@@ -57,6 +57,14 @@
   ],
   "events": [
     {
+      "status": "WATCH",
+      "title": "Section 232: Canada/Mexico USMCA metal goods — U.S. content assessment guidance",
+      "date": "2026-10-14",
+      "summary": "Commerce 於 2026/10/14 起施行提供 CBP 的 U.S. content 評估指引，僅針對符合 USMCA 優惠待遇的加拿大／墨西哥鋼、鋁、銅相關產品。",
+      "detail": "CF 目前重點產品及 China/Taiwan/Vietnam COO 無直接稅率或申報變化。此為 Commerce 評估指引，不是 CBP CSMS filing instruction。",
+      "url": "https://www.federalregister.gov/d/2026-20938"
+    },
+    {
       "status": "RISK",
       "title": "Forced Labor Section 301 — final action effective 2026/07/24 (missed active measure)",
       "date": "2026-07-28",
