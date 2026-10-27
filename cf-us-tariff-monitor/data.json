@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-14",
+  "checked_at": "2026-10-27",
   "automation_note": "GitHub Actions 每日自動查核 White House / USTR / CBP / Federal Register。只有偵測到新官方文件或來源異常時才修改 data.json；Dashboard 由 data.json 驅動。",
   "sources": [
     {
@@ -33,6 +33,14 @@
     {
       "name": "USTR — Forced Labor Section 301 final action",
       "url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ustr-takes-action-forced-labor-section-301-investigations"
+    },
+    {
+      "name": "Federal Register — CBP international mail — formal-entry compliance extended to 2027/01/20",
+      "url": "https://www.federalregister.gov/d/2026-21600"
+    },
+    {
+      "name": "Federal Register — CBP Entry Type 13 test — temporary incomplete electronic PGA data acceptance",
+      "url": "https://www.federalregister.gov/d/2026-21570"
     }
   ],
   "cards": [
@@ -43,7 +51,7 @@
     },
     {
       "label": "最新重大事件",
-      "value": "Forced Labor 301"
+      "value": "CBP 郵政 Entry"
     },
     {
       "label": "China exclusions",
@@ -52,10 +60,26 @@
     },
     {
       "label": "最後查核",
-      "value": "2026-10-14"
+      "value": "2026-10-27"
     }
   ],
   "events": [
+    {
+      "status": "WATCH",
+      "title": "CBP Entry Type 13 test — temporary incomplete electronic PGA data acceptance",
+      "date": "2026-10-22",
+      "summary": "CBP 自 2026/10/22 修改 ACE 國際郵政 Entry Type 13 測試，暫時接受未附完整電子 PGA 資料的申報傳輸。",
+      "detail": "91 FR 66707，FR Doc. 2026-21570。Entry Type 13 自願測試適用符合資格、貨值不超過 US$2,500 的國際郵政貨件；此措施未免除 PGA 法律要求，Chapter 98／99 或 FTA 的必要資料仍須提交，測試彈性終止日將另行公告。",
+      "url": "https://www.federalregister.gov/d/2026-21570"
+    },
+    {
+      "status": "WATCH",
+      "title": "CBP international mail — formal-entry compliance extended to 2027/01/20",
+      "date": "2026-10-22",
+      "summary": "CBP 將 19 CFR 145.12(a)(2)(v)、(vi) 相關國際郵政正式申報遵循期限由 2026/10/22 延至 2027/01/20；非恢復 de minimis 免稅。",
+      "detail": "91 FR 66638，FR Doc. 2026-21600。適用於涉及 PGA、Chapter 98／99 稅負或 Chapter 98／FTA 免稅主張的特定國際郵政貨件。符合資格且貨值不超過 US$2,500 者可能參與自願 Entry Type 13 測試；一般海運整櫃不直接受影響。",
+      "url": "https://www.federalregister.gov/d/2026-21600"
+    },
     {
       "status": "WATCH",
       "title": "Section 232: Canada/Mexico USMCA metal goods — U.S. content assessment guidance",
@@ -63,14 +87,6 @@
       "summary": "Commerce 於 2026/10/14 起施行提供 CBP 的 U.S. content 評估指引，僅針對符合 USMCA 優惠待遇的加拿大／墨西哥鋼、鋁、銅相關產品。",
       "detail": "CF 目前重點產品及 China/Taiwan/Vietnam COO 無直接稅率或申報變化。此為 Commerce 評估指引，不是 CBP CSMS filing instruction。",
       "url": "https://www.federalregister.gov/d/2026-20938"
-    },
-    {
-      "status": "RISK",
-      "title": "Forced Labor Section 301 — final action effective 2026/07/24 (missed active measure)",
-      "date": "2026-07-28",
-      "summary": "[補登既有重大措施] USTR 已於 2026/07/23 採取最終措施，Federal Register 於 2026/07/28 公布；自 2026/07/24 00:01 美東時間起，對 60 個經濟體原產貨物徵收 Forced Labor Section 301 額外關稅，另有豁免及短期在途過渡條款。",
-      "detail": "China COO：原則額外 12.5%，Chapter 99 9903.05.31；Vietnam COO：原則額外 12.5%，9903.05.84；Taiwan COO：MFN <10% 時本措施補足 MFN+此項 301 至 10%，MFN ≥10% 時此項額外稅為 0，分別參照 9903.05.76／9903.05.75。均須核對 U.S. note 52、Chapter 99 9903.05.85–9903.05.92 及適用的其他豁免。過渡條款：2026/07/24 00:01 美東時間前已裝船且在最終運輸途中、2026/07/28 00:01 前進口消費者可適用豁免。請逐項核對 Window Blinds/Shades、Throw/Blanket 實際 HTS、COO、Entry Summary、既有 Section 301 疊加及 landed cost；CBP 最新 CSMS filing 順序仍待直接官方核實。",
-      "url": "https://www.federalregister.gov/d/2026-15181"
     },
     {
       "status": "WATCH",
@@ -119,6 +135,14 @@
       "summary": "約 US$30B 中國輸美非敏感商品被納入未來較優惠 tariff treatment 的考量；尚非已生效降稅。",
       "detail": "White House 表述為考慮清單，優惠 tariff treatment 仍須依雙方各自國內法律與程序實施。CF 應等待正式 HTS / Chapter 99 / effective date 與 CBP entry guidance。",
       "url": "https://www.whitehouse.gov/releases/2026/09/u-s-china-board-of-trade/"
+    },
+    {
+      "status": "RISK",
+      "title": "Forced Labor Section 301 — final action effective 2026/07/24 (missed active measure)",
+      "date": "2026-07-28",
+      "summary": "[補登既有重大措施] USTR 已於 2026/07/23 採取最終措施，Federal Register 於 2026/07/28 公布；自 2026/07/24 00:01 美東時間起，對 60 個經濟體原產貨物徵收 Forced Labor Section 301 額外關稅，另有豁免及短期在途過渡條款。",
+      "detail": "China COO：原則額外 12.5%，Chapter 99 9903.05.31；Vietnam COO：原則額外 12.5%，9903.05.84；Taiwan COO：MFN <10% 時本措施補足 MFN+此項 301 至 10%，MFN ≥10% 時此項額外稅為 0，分別參照 9903.05.76／9903.05.75。均須核對 U.S. note 52、Chapter 99 9903.05.85–9903.05.92 及適用的其他豁免。過渡條款：2026/07/24 00:01 美東時間前已裝船且在最終運輸途中、2026/07/28 00:01 前進口消費者可適用豁免。請逐項核對 Window Blinds/Shades、Throw/Blanket 實際 HTS、COO、Entry Summary、既有 Section 301 疊加及 landed cost；CBP 最新 CSMS filing 順序仍待直接官方核實。",
+      "url": "https://www.federalregister.gov/d/2026-15181"
     }
   ],
   "products": [
@@ -193,24 +217,24 @@
     "source_errors": []
   },
   "review": {
-    "as_of": "2026-10-14",
-    "status": "RISK",
-    "headline": "重大補登：Forced Labor Section 301 已於 2026/07/24 生效，應立即核對 CF 各 COO 的報關及成本",
-    "assessment": "本次不是 10 月新政策，而是對既有監控漏列的正式措施補登。Federal Register 91 FR 47318 確認對 60 個經濟體實施附豁免的額外關稅；China／Vietnam 原則加徵 12.5%，Taiwan 依 MFN 稅率計算本措施補足至 10%。",
+    "as_of": "2026-10-27",
+    "status": "WATCH",
+    "headline": "補登兩項 CBP 國際郵政申報變更；CF 一般海運成品未因此直接增加關稅",
+    "assessment": "2026/10/22 Federal Register 公告正式申報遵循期限延至 2027/01/20，並修改 ACE Entry Type 13 測試中的電子 PGA 傳輸要求。此為已公布政策的補登，不是 2026/10/27 新公告。",
     "changes": [
       {
-        "label": "已生效／生效日 2026/07/24",
-        "text": "Forced Labor Section 301：China COO 9903.05.31（原則 +12.5%）；Vietnam COO 9903.05.84（原則 +12.5%）；Taiwan COO 9903.05.75／.76（依 MFN 稅率補足至 10% 或額外稅率為零）。",
-        "event_url": "https://www.federalregister.gov/d/2026-15181"
+        "label": "正式申報遵循期限：2027/01/20",
+        "text": "CBP 將 19 CFR 145.12(a)(2)(v)、(vi) 相關國際郵政正式申報遵循期限由 2026/10/22 延至 2027/01/20；非恢復 de minimis 免稅。",
+        "event_url": "https://www.federalregister.gov/d/2026-21600"
       },
       {
-        "label": "產品排除與過渡條款",
-        "text": "須逐項檢查 U.S. note 52、9903.05.85–.92 及其他適用豁免；2026/07/24 前已裝船且 2026/07/28 前進口的貨物可能符合在途豁免。",
-        "event_url": "https://www.federalregister.gov/d/2026-15181"
+        "label": "Entry Type 13 測試：2026/10/22 起",
+        "text": "CBP 自 2026/10/22 修改 ACE 國際郵政 Entry Type 13 測試，暫時接受未附完整電子 PGA 資料的申報傳輸。",
+        "event_url": "https://www.federalregister.gov/d/2026-21570"
       }
     ],
-    "product_impact": "Window Blinds/Shades、Throw/Blanket：China、Vietnam、Taiwan COO 均須重新檢查實際 HTS、適用豁免及 landed cost。不能把概括稅率直接套用到所有成品。",
-    "actions": "優先請美國報關行核對 2026/07/24 起 Entry Summary、Chapter 99、稅額疊加與豁免；必要時評估申報更正及成本調整。CBP 最新 CSMS filing instruction 尚待直接核實。",
-    "scope_note": "截至 2026/10/14；本次新增的是先前漏列的既有生效措施，不代表 10 月另有新稅率。近期官方來源查核未確認其他 CF 直接相關的實質變化；CBP filing 細節仍需補核。"
+    "product_impact": "Window Blinds/Shades、Throw/Blanket 一般海運整櫃不因本次兩項 CBP 措施改變關稅；China COO 既有 Section 301 與 Forced Labor 301 仍依實際 HTS、Chapter 99 及排除條件計算。",
+    "actions": "確認 CF 是否經國際郵政寄送美國樣品；請報關行核對貨值、PGA、Chapter 98／99、ACE Entry Type 13 自願測試資格以及 2027/01/20 遵循期限。不得推定所有郵政貨件強制使用 Type 13。",
+    "scope_note": "本摘要僅更新已查證的 CBP 申報變更；未涵蓋的官方最新 CSMS 與其他公告仍可能需要補查。"
   }
 }
