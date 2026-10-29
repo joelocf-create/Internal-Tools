@@ -60,10 +60,18 @@
     },
     {
       "label": "最後查核",
-      "value": "2026-10-27"
+      "value": "2026-10-29"
     }
   ],
   "events": [
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Notice Regarding the Uyghur Forced Labor Prevention Act Entity List",
+      "date": "2026-10-29",
+      "summary": "Federal Register 發現新的官方文件；關鍵字：forced labor。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.federalregister.gov/documents/2026/10/29/2026-22094/notice-regarding-the-uyghur-forced-labor-prevention-act-entity-list"
+    },
     {
       "status": "WATCH",
       "title": "CBP Entry Type 13 test — temporary incomplete electronic PGA data acceptance",
@@ -209,11 +217,19 @@
   "monitor": {
     "known_ids": [
       "053aaa20e4413db990e6",
+      "06c452f52d32a933b55a",
       "14747c85db4e65f72f3d",
       "353784537a2ae53591d1",
-      "a5f727aa0702c88b4048"
+      "37abc6c18d2a6c82dd9a",
+      "4eb47e75e6fa11cf9b91",
+      "70fbab717cc7691c5d84",
+      "8ef71482f90188e6c4d4",
+      "a4aeae45231fad8859b8",
+      "a5f727aa0702c88b4048",
+      "e063276c34e7b15cef5c",
+      "fd10c584d3c4b6aa2fa4"
     ],
-    "last_scan_utc": "2026-10-07T21:59:32+00:00",
+    "last_scan_utc": "2026-10-29T21:48:59+00:00",
     "source_errors": []
   },
   "review": {
