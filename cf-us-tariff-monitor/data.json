@@ -60,10 +60,26 @@
     },
     {
       "label": "最後查核",
-      "value": "2026-11-06"
+      "value": "2026-11-10"
     }
   ],
   "events": [
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Notice of Modification of Section 301 Action: China's Targeting of the Maritime, Logistics, and Shipbuilding Sectors for Dominance",
+      "date": "2026-11-10",
+      "summary": "Federal Register 發現新的官方文件；關鍵字：section 301, china。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22867/notice-of-modification-of-section-301-action-chinas-targeting-of-the-maritime-logistics-and"
+    },
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] Notice of Product Exclusion Extensions: China's Acts, Policies, and Practices Related to Technology Transfer, Intellectual Property, and Innovation",
+      "date": "2026-11-10",
+      "summary": "Federal Register 發現新的官方文件；關鍵字：china, exclusion。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22925/notice-of-product-exclusion-extensions-chinas-acts-policies-and-practices-related-to-technology"
+    },
     {
       "status": "WATCH",
       "title": "[自動偵測] Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Section 232 National Security Adjustments to Imports of Specialty Pharmaceuticals and Associated Ingredients",
@@ -226,7 +242,9 @@
     "known_ids": [
       "053aaa20e4413db990e6",
       "06c452f52d32a933b55a",
+      "146bdacd7bbe6ec5e5c7",
       "14747c85db4e65f72f3d",
+      "199c338962c1ad7e6d8b",
       "353784537a2ae53591d1",
       "37abc6c18d2a6c82dd9a",
       "3cc8899495aabd8ebc65",
@@ -238,7 +256,7 @@
       "e063276c34e7b15cef5c",
       "fd10c584d3c4b6aa2fa4"
     ],
-    "last_scan_utc": "2026-11-06T22:07:44+00:00",
+    "last_scan_utc": "2026-11-10T22:23:19+00:00",
     "source_errors": []
   },
   "review": {
