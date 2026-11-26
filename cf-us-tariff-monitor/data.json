@@ -60,10 +60,18 @@
     },
     {
       "label": "最後查核",
-      "value": "2026-11-10"
+      "value": "2026-11-26"
     }
   ],
   "events": [
+    {
+      "status": "WATCH",
+      "title": "[自動偵測] USTR Makes Determinations and Proposes Actions in 14 Section 301 Investigations Relating to Structural Excess Capacity and Production in Manufacturing Sectors",
+      "date": "2026-11-25",
+      "summary": "USTR Press Releases 發現新的官方文件；關鍵字：section 301。目前先標記 WATCH，需進一步核對 HTS / Chapter 99 / effective date / filing impact。",
+      "detail": "自動監控分類：POLICY。這是官方來源的新文件偵測，不是自動法律結論。若文件涉及 CF 的 Window Blinds/Shades、Throw/Blanket、China COO、Section 122/232/301、Forced Labor、Chapter 99 或 entry filing，再進行人工/模型深度解析。",
+      "url": "https://www.ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural"
+    },
     {
       "status": "WATCH",
       "title": "[自動偵測] Notice of Modification of Section 301 Action: China's Targeting of the Maritime, Logistics, and Shipbuilding Sectors for Dominance",
@@ -245,18 +253,20 @@
       "146bdacd7bbe6ec5e5c7",
       "14747c85db4e65f72f3d",
       "199c338962c1ad7e6d8b",
+      "2c43492f0eea65aadec4",
       "353784537a2ae53591d1",
       "37abc6c18d2a6c82dd9a",
       "3cc8899495aabd8ebc65",
       "4eb47e75e6fa11cf9b91",
       "70fbab717cc7691c5d84",
       "8ef71482f90188e6c4d4",
+      "a020b45bf255932dbaec",
       "a4aeae45231fad8859b8",
       "a5f727aa0702c88b4048",
       "e063276c34e7b15cef5c",
       "fd10c584d3c4b6aa2fa4"
     ],
-    "last_scan_utc": "2026-11-10T22:23:19+00:00",
+    "last_scan_utc": "2026-11-26T00:59:46+00:00",
     "source_errors": []
   },
   "review": {
